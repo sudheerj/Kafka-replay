@@ -27,6 +27,8 @@ public class MyProducer {
             producer.send(data); // dispatch message to broker
         }
 
+        System.out.println("Messages published!!");
+
         producer.close();
     }
 

@@ -54,7 +54,7 @@ public class MyConsumer {
                 // do something useful
                 // ...
 
-                // print message offset and it's contents
+                // print message offset and its contents
                 System.out.println("Offset = " + String.valueOf(messageAndOffset.offset()) + ", Time = " + new String(bytes, "UTF-8"));
             }
 
