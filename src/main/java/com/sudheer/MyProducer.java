@@ -1,4 +1,4 @@
-package org.ossandme;
+package com.sudheer;
 
 import kafka.javaapi.producer.Producer;
 import kafka.producer.KeyedMessage;
@@ -23,7 +23,7 @@ public class MyProducer {
         for (long cnt = 0; cnt < 100; cnt++) {
             long time = new Date().getTime(); // get current time
             String msg = String.valueOf(time);
-            KeyedMessage<String, String> data = new KeyedMessage<String, String>("ossandme", "0", msg);
+            KeyedMessage<String, String> data = new KeyedMessage<String, String>("replay", "0", msg);
             producer.send(data); // dispatch message to broker
         }
 

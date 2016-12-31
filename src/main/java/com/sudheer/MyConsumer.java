@@ -1,4 +1,4 @@
-package org.ossandme;
+package com.sudheer;
 
 import kafka.api.FetchRequest;
 import kafka.api.FetchRequestBuilder;
@@ -17,7 +17,7 @@ public class MyConsumer {
     public static void main(String args[]) {
         MyConsumer myConsumer = new MyConsumer();
 
-        String topic = "ossandme"; // topic from which to consume messages
+        String topic = "replay"; // topic from which to consume messages
 
         String address = "localhost"; // broker address
 
